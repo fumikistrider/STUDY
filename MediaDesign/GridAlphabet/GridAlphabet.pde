@@ -1,7 +1,7 @@
 
 GridRect gr;
 
-GridCirlce gc;
+GridCircle gc;
 
 void setup(){
  
@@ -17,6 +17,7 @@ void setup(){
 
 void draw(){
 
+  background(255);
   gr.create(0,0);
   gr.create(4,0);
   gr.create(0,4);

@@ -4,8 +4,12 @@ class GridRect{
   color c = #000000;
   
   void create(int x, int y){
-    fill(c);
+
+    int alpha = frameCount % 255; 
+    
+    fill(c,alpha);
     rect(size * x, size * y, size, size);    
+    
   }
   
 }
