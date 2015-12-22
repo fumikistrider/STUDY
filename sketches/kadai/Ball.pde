@@ -18,13 +18,7 @@ class Ball extends Motion{
     life--;
   }
   
-  boolean isAlive(){
-    if( life > 0 ){
-      return true;
-    }else{
-      return false;
-    }
-  }
+
   
 }
 

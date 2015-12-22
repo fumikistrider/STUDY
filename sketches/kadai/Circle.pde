@@ -1,10 +1,10 @@
-class Rect extends Motion{
+class Circle extends Motion{
   
-  Rect(int _x, int _y){
+  Circle(int _x, int _y){
     x = _x;
     y = _y;
-    r = 10;
-    life = (int)random(100,300);
+    r = 0;
+    life = 360;
     c = color( (int)random(0,255),
                (int)random(0,255),
                (int)random(0,255) );
@@ -13,11 +13,11 @@ class Rect extends Motion{
   void draw(){
     noFill();
     stroke(c);
-    rectMode(CENTER);
-    rect(x,y,r,r);
+    strokeWeight(3);
+    arc(x, y, 80, 80, 0, radians(r));
+    strokeWeight(1);
     r++;
     life--;
   }
     
 }
-
